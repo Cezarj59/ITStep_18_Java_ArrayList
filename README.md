@@ -1,4 +1,4 @@
-<h2>Atividade AULA 18 - Introdução a JAVA Collections - Utilizando ArrayList.</h2>
+<h2>Atividade AULA 18 - Introdução a JAVA Collections - ArrayList.</h2>
 <h3><p>Programação Orientada a Objetos.</p></h3>
 
 
