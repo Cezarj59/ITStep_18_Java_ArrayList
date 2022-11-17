@@ -2,11 +2,12 @@ package homework_18.services;
 
 import homework_18.veiculos.*;
 import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JOptionPane;
 
 public class Cadastros {
 
-    static ArrayList<Veiculo> cadastro = new ArrayList<>();
+    static List<Veiculo> cadastros = new ArrayList<>();
 
     public static void cadastroCarro() {
 
@@ -23,7 +24,7 @@ public class Cadastros {
         Boolean opcional4Portas = JOptionPane.showConfirmDialog(null, "Possui 4 Portas?") != 1;
         Boolean opcionalAr = JOptionPane.showConfirmDialog(null, "Possui Ar Condicionado?") != 1;
 
-        cadastro.add(new Carro(opcionalFreio, opcionalDirecao, opcional4Portas, opcionalAr, ano, fabricante, modelo, cor, opcionalNovo));
+        cadastros.add(new Carro(opcionalFreio, opcionalDirecao, opcional4Portas, opcionalAr, ano, fabricante, modelo, cor, opcionalNovo));
       
     }
 
@@ -40,7 +41,7 @@ public class Cadastros {
         String cc = JOptionPane.showInputDialog(null, "Quantas Cilindradas?");
         String categoria = JOptionPane.showInputDialog(null, "Categoria?");
 
-        cadastro.add(new Moto(cc, categoria, ano, fabricante, modelo, cor, opcionalNovo));
+        cadastros.add(new Moto(cc, categoria, ano, fabricante, modelo, cor, opcionalNovo));
 
     }
 
@@ -59,7 +60,7 @@ public class Cadastros {
         double tara = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a Tara?"));
         double pbt = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o Peso Bruto Total?"));
 
-        cadastro.add(new Caminhao(eixos, tipoCarroceria, tara, pbt, ano, fabricante, modelo, cor, opcionalNovo));
+        cadastros.add(new Caminhao(eixos, tipoCarroceria, tara, pbt, ano, fabricante, modelo, cor, opcionalNovo));
 
     }
 }
