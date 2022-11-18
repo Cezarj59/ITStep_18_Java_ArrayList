@@ -9,7 +9,8 @@ public abstract class Veiculo {
     private String fabricante;
     private String modelo;
     private String cor;
-    private boolean novo;
+    private boolean novo;   
+    
 
     public Veiculo( String ano, String fabricante, String modelo, String cor, boolean novo) {
       
@@ -61,9 +62,6 @@ public abstract class Veiculo {
     }
 
     @Override
-    public String toString() {
-        return "Veiculo{" + "ano=" + ano + ", fabricante=" + fabricante + ", modelo=" + modelo + ", cor=" + cor + ", novo=" + novo + '}';
-    }
-
+    public abstract String toString();
     
 }

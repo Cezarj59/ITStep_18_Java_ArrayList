@@ -57,8 +57,8 @@ public class Cadastros {
         String ano = JOptionPane.showInputDialog(null, "Informe o Ano: ");
         int eixos = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe a quantidade de EIXOS?"));
         String tipoCarroceria = JOptionPane.showInputDialog(null, "Informe o tipo de Carroceria?");
-        double tara = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a Tara?"));
-        double pbt = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o Peso Bruto Total?"));
+        double tara = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a Tara? ex:10.000"));
+        double pbt = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o Peso Bruto Total? ex: 52.000"));
 
         cadastros.add(new Caminhao(eixos, tipoCarroceria, tara, pbt, ano, fabricante, modelo, cor, opcionalNovo));
 
