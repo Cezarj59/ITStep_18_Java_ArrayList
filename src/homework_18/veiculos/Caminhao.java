@@ -6,6 +6,8 @@ public class Caminhao extends Veiculo {
     private String tipoCarroceria;
     private double tara;
     private double pesoBrutoTotal;
+    
+    public Caminhao() {}
 
     public Caminhao(int qtdEixos, String tipoCarroceria, double tara, double pesoBrutoTotal, String ano, String fabricante, String modelo, String cor, boolean novo) {
         super(ano, fabricante, modelo, cor, novo);
@@ -15,6 +17,10 @@ public class Caminhao extends Veiculo {
         this.pesoBrutoTotal = pesoBrutoTotal;
     }
 
+    
+
+    
+    
     public int getQtdEixos() {
         return qtdEixos;
     }

@@ -10,6 +10,10 @@ public abstract class Veiculo {
     private String modelo;
     private String cor;
     private boolean novo;   
+
+    public Veiculo() {
+    }
+    
     
 
     public Veiculo( String ano, String fabricante, String modelo, String cor, boolean novo) {
