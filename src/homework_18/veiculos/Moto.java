@@ -5,6 +5,10 @@ public class Moto extends Veiculo {
     private String cc;
     private String categoria;
 
+    public Moto() {
+    }
+
+    
     public Moto(String cc, String categoria, String ano, String fabricante, String modelo, String cor, boolean novo) {
         super(ano, fabricante, modelo, cor, novo);
         this.cc = cc;

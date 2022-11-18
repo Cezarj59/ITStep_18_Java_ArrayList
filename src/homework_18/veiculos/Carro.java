@@ -7,6 +7,11 @@ public class Carro extends Veiculo {
     private boolean opcional4Portas;
     private boolean opcionalArCondicionado;
 
+    public Carro() {
+    }
+    
+    
+
     public Carro(boolean opcionalFreioABS, boolean opcionalDirecaoH, boolean opcional4Portas, boolean opcionalArCondicionado, String ano, String fabricante, String modelo, String cor, boolean novo) {
         super(ano, fabricante, modelo, cor, novo);
         this.opcionalFreioABS = opcionalFreioABS;
